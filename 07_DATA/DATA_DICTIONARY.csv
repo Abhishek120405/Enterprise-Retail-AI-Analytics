@@ -1,0 +1,13 @@
+column,type,description
+order_id,object,Unique order identifier
+order_date,object,Order date in calendar year 2025
+customer_id,object,Synthetic customer identifier
+region,object,Sales region
+category,object,Product category
+product_name,object,Product name
+quantity,int64,Units ordered
+revenue,float64,Gross order revenue in INR; cancelled orders are zero
+cost,float64,Estimated product/fulfillment cost in INR
+profit,float64,"Revenue minus cost, with return handling impact"
+order_status,object,"Delivered, Returned, or Cancelled"
+discount_pct,float64,Synthetic discount rate applied to the order
